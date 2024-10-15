@@ -1,0 +1,40 @@
+programa
+{
+  
+  funcao inicio() {
+    inteiro vetor [10], par[10], impar[10]
+    inteiro soma =0 , i
+    real media
+
+   
+   para (i = 0; i <= 9; i++){
+    escreva("Coloque o ", i+1, "º número:" )
+    leia(vetor[i])
+    soma = vetor[i]+soma
+    media = soma/10
+    
+    se(vetor[i] % 2 == 0){
+      par[i]= vetor[i]
+    }
+    senao{
+      impar[i]= vetor[i]
+    }
+   }
+
+   escreva("Elementos pares: ")
+   para (i = 0; i <= 9; i++){
+    escreva(par[i], " ")
+   }
+
+   escreva("\nElementos impares: ")
+   para (i = 0; i <= 9; i++){
+    escreva(impar[i]," ")
+   }
+
+   escreva("\nA soma dos números é igual a ", soma,"\n")
+   escreva("A média dos números é igual a ", media)
+    
+  }    
+}
+
+  
